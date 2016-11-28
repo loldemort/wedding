@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="shift.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel ="stylesheet" href="information.css">
+    <meta charset="UTF-8">
+    <title>Ingrid og Joakim - Informasjon</title>
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Hjem</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="information.html">Informasjon</a>
+                </li>
+                <li>
+                    <a href="wishlist.html">Ønskeliste</a>
+                </li>
+                <li>
+                    <a href="reply.html">Svar på invitasjon</a>
+                </li>
+                <li>
+                    <a href="contact.html">Kontakt Oss</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<!-- Page content -->
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-3">
+            <p class="lead">Informasjon</p>
+            <div class="list-group">
+                <a href="#general" class="list-group-item">Generelt</a>
+                <a href="#local" class="list-group-item">Lokale</a>
+                <a href="#table" class="list-group-item">Bordplassering - kommer</a>
+                <a href="#extra" class="list-group-item">Noe mer som trengs?</a>
+            </div>
+        </div>
+        <div class = "col-md-8" id="general">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h3>Generelt:</h3>
+
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div>
+            </div>
+        </div>
+        <div class = "col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-body" id="local">
+                    <h3>Lokale:</h3>
+
+                    Her kan vi legge inn kart og evt bilder.
+
+                    <div id="map"></div>
+
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div>
+            </div>
+        </div>
+        <div class = "col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-body" id="table">
+                    <h3>Bordplasser:</h3>
+
+                    Her kan vi ha fancy bordplassering
+
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div>
+            </div>
+        </div>
+        <div class = "col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-body" id="extra">
+                    <h3>Noe mer som trengs?</h3>
+
+                    <p>Her kan det stå hva som helst</p>
+
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
+
+<script>
+    function initMap() {
+        var uluru = {lat: 60.062316, lng: 10.309873};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+</script>
+<script src = "js/bootstrap.min.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI8ODNhqlKcnyFK8av-xoQvK4f1_jGRe4&callback=initMap"
+        type="text/javascript"></script>
+
+
+</body>
+</html>

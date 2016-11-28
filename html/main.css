@@ -1,0 +1,94 @@
+body {
+  font-size: 62.5%;
+  background-color: #eeeeee;
+  padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.navbar-inverse {
+    background-color: #cccccc;
+    border-color: #444444;
+}
+
+.nav a {
+  color: #ffff00;
+  font-size: 2em;
+  padding: 30px 10px;
+
+
+}
+
+.nav {
+  padding-left: 10px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #444444;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #444444;
+}
+
+.nav li {
+  display: list-item;
+}
+
+.pictures{
+  height: 300px;
+  width: auto;
+}
+
+.pictures img{
+  display: inline-block;
+  max-height: 300px;
+}
+
+.jumbotron {
+  //background-image:url(resources/IMG_2048.jpg);
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 0px;
+}
+
+.jumbotron .container {
+  position: relative;
+  top:40px;
+  text-align: center;
+}
+
+.jumbotron h1 {
+  color: #444444;
+  font-size: 9.0em;
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
+
+.jumbotron p {
+  font-size: 4.0em;
+  color: #5e5e5e;
+}
+
+.jumbotron a {
+  font-size: 3.0em;
+}
+
+
+.learn-more {
+  background-color: #cccccc;
+
+}
+
+.learn-more h3 {
+  font-family: 'Shift', sans-serif;
+  font-size: 3.0em;
+  font-weight: bold;
+}
+
+.learn-more a {
+  color: #00b0ff;
+
+}
+.learn-more p {
+  font-size: 2.0em;
+}
