@@ -6,6 +6,7 @@ $(document).ready(function(){
     $('.pictures').slick({
         slidesToScroll: 1,
         autoplay: true,
+        arrows: false,
         autoplaySpeed: 2000,
         centerMode: true,
         centerPadding: '60px',
