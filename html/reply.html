@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="reply.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/simple-print" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/cooper-hewitt" type="text/css"/>
 
     <title> Ingrid og Joakim </title>
 
@@ -20,7 +22,7 @@
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -29,16 +31,19 @@
             <a class="navbar-brand" href="index.html">Hjem</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
+                <li>
+                    <a href="reply.html">Svar på invitasjon</a>
+                </li>
+                <li>
+                    <a href="sleepover.html">Overnatting</a>
+                </li>
                 <li>
                     <a href="information.html">Informasjon</a>
                 </li>
                 <li>
                     <a href="wishlist.html">Ønskeliste</a>
-                </li>
-                <li>
-                    <a href="reply.html">Svar på invitasjon</a>
                 </li>
                 <li>
                     <a href="contact.html">Kontakt Oss</a>
@@ -48,8 +53,7 @@
         <!-- /.navbar-collapse -->
     </div>
     <!-- /.container -->
-</nav>
-<!--<div class = "container">
+</nav><!--<div class = "container">
     <div class = "col-md-4">
         <div class="input-group input-group-lg">
             <span class="input-group-addon" id="firstname">Fornavn</span>
@@ -60,17 +64,45 @@
         <div class="input-group input-group-lg">
             <span class="input-group-addon" id="lastname">Etternavn</span>
             <input type="text" class="form-control" placeholder="Etternavn" aria-describedby="sizing-addon1">
+jik    </div>
+</div>-->
+<form class="form-horizontal">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h3>Her kan du svare på invitasjonen</h3>
+                    <p>Sørg for at du fyller ut alle feltene riktig. Blablabla her kan det stå mer.</p>
+                    <p>Dobbeltsjekk at e-post adressen er korrektum</p>
+                    <p>Dersom noen i følget ikke kan komme, kan du først fylle ut og sende inn for de som kommer, og deretter melde avbud for de som ikke kan. </p>
+                </div>
+            </div>
         </div>
     </div>
-</div>-->
-
-<form class="form-horizontal">
     <div class="form-group">
 
-        <div class="col-sm-4">
-            <input type="name" class="form-control" id="fullname" placeholder="Navn">
+        <div class = "col-sm-4">
+            <div class = "button">
+            <a href = "replyno.html">
+                <button type="button" class="btn btn-default btn-lg btn-block">Klikk her for å melde avbud :'(</button>
+            </a>
+            </div>
         </div>
-    </div>
+
+        <div class="col-sm-4">
+            <input type="name" class="form-control" id="fullname" placeholder="Navn" required>
+        </div>
+        <div class="col-sm-4">
+            <input type="name" class="form-control" id="email" placeholder="E-Post" required>
+        </div>
+        <div class='col-sm-3'>
+            <select class = 'form-control' id = '" + sleepoverid + "'>
+                <option value = 0>-- Skal du overnatte? --</option>"
+                <option value = ja>Ja</option>"
+                <option value = nei>Nei</option>
+            </select>
+        </div>
+    </div>"
     <!--<div class="form-group">
 
         <div class="col-sm-4">
@@ -88,14 +120,27 @@
     </select>
     <div id = "extraPersons" ></div>
 
-        <select class="form-control" id = "sleepover" disabled>
-            <option value = 0>-- Fyll ut resten først --</option>
-            <option value = 'ingen'>Ingen</option>
-        </select>
+    <!--<select class="form-control" id = "sleepover" disabled>
+        <option value = 0>&#45;&#45; Fyll ut resten først &#45;&#45;</option>
+        <option value = 'ingen'>Ingen</option>
+    </select>-->
     <div id = "sleepoverPersons"></div>
 
+    <div id = "additionalInfo">
+        <div class = "col-sm-4">
+            <h5>Har du noen tilleggsopplysninger eller spørsmål? Eller vil du bare legge igjen en hyggelig hilsen?</h5>
+        </div>
+        <div class="col-sm-4">
+           <!-- <div class="input-group input-group-lg">
+                <span class="input-group-addon" id="sizing-addon1"></span>
+                <input type="text" class="form-control" placeholder="Skriv gjerne her!" aria-describedby="sizing-addon1" style="height:300px">
+            </div>-->
+            <textarea name="Text1" rows="5"></textarea>
+        </div>
+    </div>
+
     <div class="form-group">
-        <div class="col-sm-1">
+        <div class="col-sm-4">
             <button type="submit" class="btn btn-default" disabled>Send inn svar</button>
         </div>
     </div>

@@ -4,14 +4,15 @@
 
 $(document).ready(function(){
     $('.pictures').slick({
+        variableWidth: true,
+        slidesToShow: 3,
+        infinite: true,
         slidesToScroll: 1,
         autoplay: true,
         arrows: false,
         autoplaySpeed: 2000,
         centerMode: true,
         centerPadding: '60px',
-        variableWidth: true,
-        slidesToShow: 3,
         responsive: [
             {
                 breakpoint: 768,

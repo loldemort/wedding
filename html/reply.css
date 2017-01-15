@@ -13,7 +13,18 @@
     text-align: center;
 }
 
+.col-md-3 {
+    margin-top: 2em;
+}
+
 .col-sm-4 {
+    margin-top: 2em;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.col-sm-3 {
     margin-top: 2em;
     margin-bottom: 0;
     padding-top: 0;
@@ -35,6 +46,15 @@
 
 }
 
+textarea{
+    width: 100%;
+    font-size: 2em;
+}
+
+p{
+    font-size: 3em;
+}
+
 @media screen and (min-width: 768px){
     .col-sm-4, #additionalPersons, #sleepover  {
         margin-top: 2em;
@@ -45,4 +65,11 @@
 
     }
 
+}
+
+@media screen and (min-width: 768px){
+    .col-md-3 {
+        position: fixed;
+        margin-left: 2em;
+    }
 }
